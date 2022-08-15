@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{087922C3-0E73-43F8-96F6-5A33901C11B1}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="BookTrack/Models/Book.cs">
     <Files>
-      <File FileName="BookTrack/Models/Book.cs" Line="7" Column="5" />
+      <File FileName="BookTrack/Models/Book.cs" Line="12" Column="40" />
       <File FileName="BookTrack/Data/BookCatalogContext.cs" Line="1" Column="1" />
       <File FileName="BookTrack/Pages/Books/Delete.cshtml" Line="1" Column="1" />
       <File FileName="BookTrack/Pages/Books/Details.cshtml" Line="1" Column="1" />

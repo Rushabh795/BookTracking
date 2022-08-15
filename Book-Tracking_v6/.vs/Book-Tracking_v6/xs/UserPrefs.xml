@@ -1,4 +1,28 @@
 ﻿<Properties StartupConfiguration="{1C2BB2F7-7E6B-4BD9-B490-12BBE675AC24}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Book-Tracking_v6/Models/Book.cs">
+    <Files>
+      <File FileName="Book-Tracking_v6/Models/Book.cs" Line="6" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Book-Tracking_v6" expanded="True">
+            <Node name="Book-Tracking_v6" expanded="True">
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Book-Tracking__v6 FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Book-Tracking__v6 FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

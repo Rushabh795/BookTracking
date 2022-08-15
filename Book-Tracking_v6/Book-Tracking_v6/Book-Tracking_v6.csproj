@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Pages\book\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Pages\book\" />
   </ItemGroup>
 </Project>
