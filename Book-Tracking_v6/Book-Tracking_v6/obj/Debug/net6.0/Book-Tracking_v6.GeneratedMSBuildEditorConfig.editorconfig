@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/book/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYm9vay9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/book/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYm9vay9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/book/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYm9vay9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/book/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYm9vay9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/book/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYm9vay9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
