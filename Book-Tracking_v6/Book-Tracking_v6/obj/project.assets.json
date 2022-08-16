@@ -10064,11 +10064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/BookTracking-main/Book-Tracking_v6/Book-Tracking_v6/Book-Tracking_v6.csproj",
+      "projectUniqueName": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Book-Tracking_v6.csproj",
       "projectName": "Book-Tracking_v6",
-      "projectPath": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/BookTracking-main/Book-Tracking_v6/Book-Tracking_v6/Book-Tracking_v6.csproj",
+      "projectPath": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/Book-Tracking_v6.csproj",
       "packagesPath": "/Users/rushabhshah/.nuget/packages/",
-      "outputPath": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/BookTracking-main/Book-Tracking_v6/Book-Tracking_v6/obj/",
+      "outputPath": "/Users/rushabhshah/Desktop/WebDevelopment/BookTracking/Book-Tracking_v6/Book-Tracking_v6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/rushabhshah/.nuget/NuGet/NuGet.Config"
