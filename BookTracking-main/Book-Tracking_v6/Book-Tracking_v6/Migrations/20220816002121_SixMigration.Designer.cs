@@ -2,6 +2,7 @@
 using BookCatelog.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Book_Tracking_v6.Migrations
 {
     [DbContext(typeof(BookCatelogContext))]
-    partial class BookCatelogContextModelSnapshot : ModelSnapshot
+    [Migration("20220816002121_SixMigration")]
+    partial class SixMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.8");
@@ -26,7 +28,15 @@ namespace Book_Tracking_v6.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("rate")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
