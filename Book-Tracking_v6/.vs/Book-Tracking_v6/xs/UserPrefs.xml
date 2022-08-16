@@ -1,19 +1,18 @@
 ﻿<Properties StartupConfiguration="{1C2BB2F7-7E6B-4BD9-B490-12BBE675AC24}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Book-Tracking_v6/Pages/Index.cshtml">
+  <MonoDevelop.Ide.ItemProperties.Book-Tracking__v6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Book-Tracking_v6/Models/subCategory.cs">
     <Files>
-      <File FileName="Book-Tracking_v6/Models/Book.cs" Line="17" Column="1" />
-      <File FileName="Book-Tracking_v6/Models/Category.cs" Line="11" Column="1" />
+      <File FileName="Book-Tracking_v6/Models/Book.cs" Line="15" Column="1" />
+      <File FileName="Book-Tracking_v6/Models/Category.cs" Line="6" Column="35" />
       <File FileName="Book-Tracking_v6/Migrations/20220815194808_FirstMigration.cs" Line="23" Column="60" />
       <File FileName="Book-Tracking_v6/Migrations/20220815195253_ThirdMigration.cs" Line="1" Column="1" />
       <File FileName="Book-Tracking_v6/Migrations/20220815195253_ThirdMigration.Designer.cs" Line="30" Column="1" />
       <File FileName="Book-Tracking_v6/Migrations/20220815194808_FirstMigration.Designer.cs" Line="16" Column="20" />
       <File FileName="Book-Tracking_v6/Data/BookCatelogContext.cs" Line="1" Column="1" />
-      <File FileName="Book-Tracking_v6/Pages/book/Create.cshtml" Line="36" Column="56" />
-      <File FileName="Book-Tracking_v6/Pages/book/Delete.cshtml" Line="38" Column="58" />
-      <File FileName="Book-Tracking_v6/Pages/book/Edit.cshtml" Line="37" Column="56" />
+      <File FileName="Book-Tracking_v6/Pages/book/Create.cshtml" Line="36" Column="19" />
+      <File FileName="Book-Tracking_v6/Pages/book/Delete.cshtml" Line="38" Column="50" />
+      <File FileName="Book-Tracking_v6/Pages/book/Edit.cshtml" Line="37" Column="19" />
       <File FileName="Book-Tracking_v6/Migrations/20220815195135_SecondMigration.Designer.cs" Line="1" Column="1" />
       <File FileName="Book-Tracking_v6/Program.cs" Line="1" Column="1" />
       <File FileName="Book-Tracking_v6/Models/subCategory.cs" Line="12" Column="1" />
@@ -37,7 +36,10 @@
         <State name="__root__">
           <Node name="Book-Tracking_v6" expanded="True">
             <Node name="Book-Tracking_v6" expanded="True">
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
+                <Node name="book" expanded="True" />
                 <Node name="Error.cshtml" expanded="True" />
                 <Node name="Index.cshtml" expanded="True" />
                 <Node name="Privacy.cshtml" expanded="True" />
@@ -54,5 +56,6 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Book-Tracking__v6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>
