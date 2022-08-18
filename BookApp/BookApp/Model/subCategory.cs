@@ -3,9 +3,8 @@ namespace BookApp.Model
 {
     public class subCategory
     {
-        public subCategory()
-        {
-        }
+        public string subcategoryname { get; set; }
+
     }
 }
 
