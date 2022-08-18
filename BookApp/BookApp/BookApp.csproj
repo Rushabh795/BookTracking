@@ -8,8 +8,10 @@
 
   <ItemGroup>
     <None Remove="Model\" />
+    <None Remove="Pages\book\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="Pages\book\" />
   </ItemGroup>
 </Project>
