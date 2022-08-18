@@ -1,7 +1,12 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Book.Data;
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<BookFindContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("BookFindContext") ?? throw new InvalidOperationException("Connection string 'BookFindContext' not found.")));
 
 var app = builder.Build();
 
