@@ -6,36 +6,36 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Book.Data;
 using BookApp.Model;
+using BookCatelog.Db;
 
 namespace BookApp.Pages.book
 {
     public class EditModel : PageModel
     {
-        private readonly Book.Data.BookFindContext _context;
+        private readonly BookCatelog.Db.BookContext _context;
 
-        public EditModel(Book.Data.BookFindContext context)
+        public EditModel(BookCatelog.Db.BookContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Book Book { get; set; } = default!;
+        public BookModel BookModel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Book == null)
+            if (id == null || _context.BookModel == null)
             {
                 return NotFound();
             }
 
-            var book =  await _context.Book.FirstOrDefaultAsync(m => m.id == id);
-            if (book == null)
+            var bookmodel =  await _context.BookModel.FirstOrDefaultAsync(m => m.id == id);
+            if (bookmodel == null)
             {
                 return NotFound();
             }
-            Book = book;
+            BookModel = bookmodel;
             return Page();
         }
 
@@ -48,7 +48,7 @@ namespace BookApp.Pages.book
                 return Page();
             }
 
-            _context.Attach(Book).State = EntityState.Modified;
+            _context.Attach(BookModel).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +56,7 @@ namespace BookApp.Pages.book
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!BookExists(Book.id))
+                if (!BookModelExists(BookModel.id))
                 {
                     return NotFound();
                 }
@@ -69,9 +69,9 @@ namespace BookApp.Pages.book
             return RedirectToPage("./Index");
         }
 
-        private bool BookExists(int id)
+        private bool BookModelExists(int id)
         {
-          return (_context.Book?.Any(e => e.id == id)).GetValueOrDefault();
+          return (_context.BookModel?.Any(e => e.id == id)).GetValueOrDefault();
         }
     }
 }

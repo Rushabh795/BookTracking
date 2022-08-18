@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using BookApp.Model;
 
-namespace Book.Data
+namespace BookCatelog.Db
 {
-    public class BookFindContext : DbContext
+    public class BookContext : DbContext
     {
-        public BookFindContext (DbContextOptions<BookFindContext> options)
+        public BookContext (DbContextOptions<BookContext> options)
             : base(options)
         {
         }
 
-        public DbSet<BookApp.Model.Book> Book { get; set; } = default!;
+        public DbSet<BookApp.Model.BookModel> BookModel { get; set; } = default!;
     }
 }

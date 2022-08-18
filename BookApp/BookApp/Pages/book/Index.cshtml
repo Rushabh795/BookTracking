@@ -20,22 +20,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].bookTitle)
+                @Html.DisplayNameFor(model => model.BookModel[0].bookTitle)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].bookAuthor)
+                @Html.DisplayNameFor(model => model.BookModel[0].bookAuthor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].categoryname)
+                @Html.DisplayNameFor(model => model.BookModel[0].categoryname)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Book[0].subcategoryname)
+                @Html.DisplayNameFor(model => model.BookModel[0].subcategoryname)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Book) {
+@foreach (var item in Model.BookModel) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.bookTitle)

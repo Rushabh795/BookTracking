@@ -5,27 +5,27 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Book.Data;
 using BookApp.Model;
+using BookCatelog.Db;
 
 namespace BookApp.Pages.book
 {
     public class IndexModel : PageModel
     {
-        private readonly Book.Data.BookFindContext _context;
+        private readonly BookCatelog.Db.BookContext _context;
 
-        public IndexModel(Book.Data.BookFindContext context)
+        public IndexModel(BookCatelog.Db.BookContext context)
         {
             _context = context;
         }
 
-        public IList<Book> Book { get;set; } = default!;
+        public IList<BookModel> BookModel { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Book != null)
+            if (_context.BookModel != null)
             {
-                Book = await _context.Book.ToListAsync();
+                BookModel = await _context.BookModel.ToListAsync();
             }
         }
     }

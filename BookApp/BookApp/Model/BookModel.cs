@@ -1,7 +1,7 @@
 ﻿using System;
 namespace BookApp.Model
 {
-    public class Book
+    public class BookModel
     {
         public int id { get; set; }
         public string bookTitle { get; set; }

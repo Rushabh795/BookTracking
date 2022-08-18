@@ -5,55 +5,55 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Book.Data;
 using BookApp.Model;
+using BookCatelog.Db;
 
 namespace BookApp.Pages.book
 {
     public class DeleteModel : PageModel
     {
-        private readonly Book.Data.BookFindContext _context;
+        private readonly BookCatelog.Db.BookContext _context;
 
-        public DeleteModel(Book.Data.BookFindContext context)
+        public DeleteModel(BookCatelog.Db.BookContext context)
         {
             _context = context;
         }
 
         [BindProperty]
-      public Book Book { get; set; } = default!;
+      public BookModel BookModel { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Book == null)
+            if (id == null || _context.BookModel == null)
             {
                 return NotFound();
             }
 
-            var book = await _context.Book.FirstOrDefaultAsync(m => m.id == id);
+            var bookmodel = await _context.BookModel.FirstOrDefaultAsync(m => m.id == id);
 
-            if (book == null)
+            if (bookmodel == null)
             {
                 return NotFound();
             }
             else 
             {
-                Book = book;
+                BookModel = bookmodel;
             }
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Book == null)
+            if (id == null || _context.BookModel == null)
             {
                 return NotFound();
             }
-            var book = await _context.Book.FindAsync(id);
+            var bookmodel = await _context.BookModel.FindAsync(id);
 
-            if (book != null)
+            if (bookmodel != null)
             {
-                Book = book;
-                _context.Book.Remove(Book);
+                BookModel = bookmodel;
+                _context.BookModel.Remove(BookModel);
                 await _context.SaveChangesAsync();
             }
 
